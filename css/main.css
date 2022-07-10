@@ -1,0 +1,69 @@
+@charset "uft-8";
+/*全体画像の設定*/
+html {
+    background-color: rgb(64, 64, 168);
+}
+#change ul{
+    width: 980px;
+    clear: both;
+    overflow: hidden;
+    margin: 16px auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#change ul li {
+    width: 195px;
+    float: left;
+    margin-right: 1px;
+    text-align: center;
+}
+#change ul li a {
+    padding: 16px;
+    background-color:lightskyblue;
+    color: black;
+    text-decoration: none;
+}
+
+#change ul li a:hover{
+    background-color: rgb(163, 16, 114);
+}
+/*headerの設定*/
+header{
+    list-style: none;
+    width: 980px;
+    margin: 0 auto;
+}
+#global ul{
+    list-style:none;
+}
+
+/*Bodyの設定*/
+body{
+    width: 980px;
+    margin: auto;
+    color: rgb(255, 255, 255);
+}
+h1{
+    text-align: center;
+    background-color: rgb(68, 68, 68);
+    border-radius: 10%;
+}
+
+#main{
+    background-color:#414141d7;
+    width:980px;
+    text-align:center;
+    margin-left:10px;
+}
+
+/*サイドバナー設定*/
+#side{
+  background-color:#4e4d4d;
+  width:300px;
+  text-align:center;
+}
+/*article設定*/
+article{
+    display:flex;
+}
