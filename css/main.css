@@ -3,30 +3,33 @@
 html {
     background-color: rgb(64, 64, 168);
 }
-#change ul{
-    width: 980px;
-    clear: both;
-    overflow: hidden;
-    margin: 16px auto;
+#change ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 #change ul li {
     width: 195px;
     float: left;
     margin-right: 1px;
     text-align: center;
 }
+
+#change ul li img{
+    width: 16px;
+}
+
 #change ul li a {
+    display:  block;
     padding: 16px;
-    background-color:lightskyblue;
-    color: black;
+    background-color:rgb(59, 59, 59);
+    color: rgb(218, 218, 218);
     text-decoration: none;
 }
 
 #change ul li a:hover{
-    background-color: rgb(163, 16, 114);
+    background-color: rgb(13, 32, 202);
 }
 /*headerの設定*/
 header{
@@ -66,4 +69,13 @@ h1{
 /*article設定*/
 article{
     display:flex;
+}
+
+#list{
+    margin: auto;
+}
+
+#main ul{
+    text-align: left;
+    list-style: none;
 }
