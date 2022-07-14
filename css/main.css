@@ -23,9 +23,9 @@ html {
 }
 
 #change ul li a {
-  display:  block;
+  display: block;
   padding: 16px;
-  background-color:rgb(59, 59, 59);
+  background-color: rgb(59, 59, 59);
   color: rgb(218, 218, 218);
   text-decoration: none;
 }
@@ -51,6 +51,7 @@ body {
   margin: auto;
   color: rgb(255, 255, 255);
 }
+
 h1 {
   text-align: center;
   background-color: rgb(68, 68, 68);
@@ -77,12 +78,12 @@ article {
 }
 
 #list {
-    margin: auto;
+  margin: auto;
 }
 
 #main ul {
-    text-align: left;
-    list-style: none;
+  text-align: left;
+  list-style: none;
 }
 
 /* center classの中央揃え */
