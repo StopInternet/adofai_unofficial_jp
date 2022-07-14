@@ -1,81 +1,86 @@
 @charset "uft-8";
-/*全体画像の設定*/
+
+/* 全体画像の設定 */
 html {
-    background-color: rgb(64, 64, 168);
+  background-color: rgb(64, 64, 168);
 }
+
 #change ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 #change ul li {
-    width: 195px;
-    float: left;
-    margin-right: 1px;
-    text-align: center;
+  width: 195px;
+  float: left;
+  margin-right: 1px;
+  text-align: center;
 }
 
-#change ul li img{
-    width: 16px;
+#change ul li img {
+  width: 16px;
 }
 
 #change ul li a {
-    display:  block;
-    padding: 16px;
-    background-color:rgb(59, 59, 59);
-    color: rgb(218, 218, 218);
-    text-decoration: none;
+  display:  block;
+  padding: 16px;
+  background-color:rgb(59, 59, 59);
+  color: rgb(218, 218, 218);
+  text-decoration: none;
 }
 
-#change ul li a:hover{
-    background-color: rgb(13, 32, 202);
-}
-/*headerの設定*/
-header{
-    list-style: none;
-    width: 980px;
-    margin: 0 auto;
-}
-#global ul{
-    list-style:none;
+#change ul li a:hover {
+  background-color: rgb(13, 32, 202);
 }
 
-/*Bodyの設定*/
-body{
-    width: 980px;
+/* headerの設定 */
+header {
+  list-style: none;
+  width: 980px;
+  margin: 0 auto;
+}
+
+#global ul {
+  list-style: none;
+}
+
+/* bodyの設定 */
+body {
+  width: 980px;
+  margin: auto;
+  color: rgb(255, 255, 255);
+}
+h1 {
+  text-align: center;
+  background-color: rgb(68, 68, 68);
+  border-radius: 10%;
+}
+
+#main {
+  background-color: #414141d7;
+  width: 980px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+/* サイドバナー設定 */
+#side {
+  background-color: #4e4d4d;
+  width: 300px;
+  text-align: center;
+}
+
+/* article設定 */
+article {
+  display: flex;
+}
+
+#list {
     margin: auto;
-    color: rgb(255, 255, 255);
-}
-h1{
-    text-align: center;
-    background-color: rgb(68, 68, 68);
-    border-radius: 10%;
 }
 
-#main{
-    background-color:#414141d7;
-    width:980px;
-    text-align:center;
-    margin-left:10px;
-}
-
-/*サイドバナー設定*/
-#side{
-  background-color:#4e4d4d;
-  width:300px;
-  text-align:center;
-}
-/*article設定*/
-article{
-    display:flex;
-}
-
-#list{
-    margin: auto;
-}
-
-#main ul{
+#main ul {
     text-align: left;
     list-style: none;
 }
