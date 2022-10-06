@@ -104,45 +104,31 @@
             </div>
             <div id="layoutSidenav_content">
                 <main>
-                    <div class="adofai_jp">
-                    <h1 class="mt-4"> Adofai JP Unofficial</h1>
                     <!--ページ文章書くとこ-->
-                    <h2>第2回イベント 
-                    「ハロウィンキングダム🎃」
-                    </h2>
-                    <h2 style="color:red">開催期間 10月1日から10月31日まで</h2><br>
-                    <h2>
-                    第2回イベントについて:<br>
-                    ハロウィンにちなんだハロウィン風譜面が<br>
-                    3つイベント譜面として登場<br>
-                    今回はアイコン装飾出来るフレームが登場！<br>
-                    詳細はDiscordをご確認ください。<br>
-                    <br><br>
-                    <div style="color: green">入手称号：<br></div>
-                    ハロウィン（金、銀、銅）<br>
-                    <div style="color: green">入手フレーム：<br></div>
-                    ハロウィン（金、銀、銅）<br>
-                    称号贈呈者：<br>
-                    <h2>イベント譜面：</h2>
-                    <h3><a href="https://adofai.gg/levels/2186" target="_blank">1.かめりあ-Ghoul</a></h3>
-                    Level:19
-                    Tiles:230
-                    BPM:2553 
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZCZqQQxuf-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <h3><a href="https://adofai.gg/levels/2360" target="_blank">2.かめりあ-Ghost(easy)</a></h3>
-                    Level:15 
-                    Tiles:1574
-                    BPM:220
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0a3676zjNN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <h3><a href="https://adofai.fandom.com/wiki/World_ML" target="_blank">3.本家譜面:ML-X</a></h3>
-                    Tiles:428
-                    BPM:195
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8c6oIbDIkw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="adofai_jp">
+                        <h1 class="mt-4"> Adofai JP Unofficial</h1>
+                        <br>
+                        <div id="subtitle">
+                            
+                        </div>
+                        <br>
+                        <br><br><br>
+                        <div id="results">
+                            <h3>ランダンチャレンジ！</h3>
+                        </div>
+                        <button class="btn" onclick="selectOsusume()"></button><br>
+                        <button class="btn" onclick="reload()"><h2>ここをクリックして再抽選</h2></button><br><br>
+
+                        <div id="lists">
+                        </div>
+                        
+                    </div>
                 </main>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
+        <script src="js/select_custom.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
         <script src="assets/demo/chart-area-demo.js"></script>
         <script src="assets/demo/chart-bar-demo.js"></script>
