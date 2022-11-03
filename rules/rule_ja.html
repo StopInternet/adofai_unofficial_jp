@@ -9,7 +9,7 @@
         
         <title>Adofai Unofficial Jp Web Site</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="../css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 
         <meta name="title" content="Adofai_JP Unofficial">
@@ -26,12 +26,12 @@
         <meta property="twitter:url" content="https://stopinternet.github.io/achievement_adofai">
         <meta property="twitter:title" content="Adofai_JP Unofficial">
         <meta property="twitter:description" content="Adofai_JP Discordサーバーで運用している、ウェブサイト">
-        <link rel="shortcut icon" href="icon.ico"> 
+        <link rel="shortcut icon" href="../icon.ico"> 
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="index.html">Adofai JP非公式サイト</a>
+            <a class="navbar-brand ps-3" href="../index.html">Adofai JP非公式サイト</a>
             <!-- サイドバー-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -42,7 +42,7 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Core</div>
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link" href="../index.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 メインページ
                             </a>
@@ -54,10 +54,10 @@
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="mod_add.html">modの導入方法</a>
-                                    <a class="nav-link" href="custom_play.html">おすすめのカスタム譜面</a>
-                                    <a class="nav-link" href="custom_select.html">ランダム譜面チャレンジ</a>
-                                    <a class="nav-link" href="rules/rule.html">ルール</a>
+                                    <a class="nav-link" href="../mod_add.html">modの導入方法</a>
+                                    <a class="nav-link" href="../custom_play.html">おすすめのカスタム譜面</a>
+                                    <a class="nav-link" href="../custom_select.html">ランダム譜面チャレンジ</a>
+                                    <a class="nav-link" href="../rules/rule.html">ルール</a>
                                 </nav>
                             </div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
@@ -68,12 +68,12 @@
                             <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
                                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
-                                        称号
+                                        レベルアップ報酬
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
                                     <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                                         <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="etc.html">詳細</a>
+                                            <a class="nav-link" href="../etc.html">詳細</a>
                                         </nav>
                                     </div>
                                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
@@ -83,7 +83,7 @@
                                     <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                                         <nav class="sb-sidenav-menu-nested nav">
                                             <!--イベント一覧-->
-                                            <a class="nav-link" href="event_1.html">第1回</a>
+                                            <a class="nav-link" href="../event_1.html">第1回</a>
                                             <a class="nav-link" href="#"></a>
                                         </nav>
                                     </div>
@@ -105,124 +105,58 @@
             </div>
             <div id="layoutSidenav_content">
                 <main>
-                    <div class="adofai_jp">
-                    <h1 class="mt-4"> Adofai JP Unofficial</h1>
                     <!--ページ文章書くとこ-->
-                    譜面をクリアすることで経験値を獲得できます。<br>
-                    レベルアップをすることで得られるロール称号もあります<br><br>
-                    <h2>レベルアップ報酬</h2>
-                    <br>
-                    <table border="2" id="list">
-                        <tr>
-                            <th>称号名</th>
-                            <th>必要レベル</th>
-                        </tr>
-                        <tr>
-                            <th>「覇者」</th>
-                            <th>:100</th>
-                        </tr>
-                        <tr>
-                            <th>超・皆伝</th>
-                            <th>:95</th>
-                        </tr>
-                        <tr>
-                            <th>覇者の使い</th>
-                            <th>:90</th>
-                        </tr>
-                        <tr>
-                            <th>悪魔</th>
-                            <th>:85</th>
-                        </tr>
-                        <tr>
-                            <th>真・皆伝</th>
-                            <th>:80</th>
-                        </tr>
-                        <tr>
-                            <th>皆伝</th>
-                            <th>:70</th>
-                        </tr>
-                        <tr>
-                            <th>堕天使</th>
-                            <th>:60</th>
-                        </tr>
-                        <tr>
-                            <th>天使</th>
-                            <th>:55</th>
-                        </tr>
-                        <tr>
-                            <th>プロ</th>
-                            <th>:50</th>
-                        </tr>
-                        <tr>
-                            <th>パイレーツ</th>
-                            <th>:45</th>
-                        </tr>
-                        <tr>
-                            <th>ハイランナー</th>
-                            <th>:40</th>
-                        </tr>
-                        <tr>
-                            <th>上級者・真</th>
-                            <th>:37</th>
-                        </tr>
-                        <tr>
-                            <th>上級者・改</th>
-                            <th>:34</th>
-                        </tr>
-                        <tr>
-                            <th>上級者</th>
-                            <th>:30</th>
-                        </tr>
-                        <tr>
-                            <th>ミドルランナー</th>
-                            <th>:28</th>
-                        </tr>
-                        <tr>
-                            <th>中級者・真</th>
-                            <th>:26</th>
-                        </tr>
-                        <tr>
-                            <th>中級者・改</th>
-                            <th>:24</th>
-                        </tr>
-                        <tr>
-                            <th>中級者</th>
-                            <th>:20</th>
-                        </tr>
-                        <tr>
-                            <th>ハロウィンキングダム</th>
-                            <th>:17</th>
-                        </tr>
-                        <tr>
-                            <th>ランナー</th>
-                            <th>:15</th>
-                        </tr>
-                        <tr>
-                            <th>ファーストチャレンジャー</th>
-                            <th>:10</th>
-                        </tr>
-                        <tr>
-                            <th>初心者・真</th>
-                            <th>:8</th>
-                        </tr>
-                        <tr>
-                            <th>初心者・改</th>
-                            <th>:6</th>
-                        </tr>
-                        <tr>
-                            <th>初心者</th>
-                            <th>:3</th>
-                        </tr>
-                        </table>
-                        </div>
+                    <div class="adofai_jp">
+                        <br><br>
+                        <h1 class="mt-4"> Adofai JP Unofficial</h1><br>
+                        こちらAdofai JP非公式 Discordサーバーきてくださりありがとうございます！<br>
+                        このサーバーを利用するにあたり、以下のルールを守ってください。<br>
+                        ルールに反した場合、最悪BANの（サーバーからの追放）などの対応を取る可能性があります<br>
+                        よく読んだうえで参加していただけるようよろしくお願いします<br>
+                        <br><br>
+                        ルール<br>
+                        1. 他の参加者や第三者に対し、以下に該当する投稿を禁止します<br>
+                        ・人種差別（短縮表現や、婉曲な表現などを含みます）<br>
+                        ・誹謗中傷、攻撃行為<br>
+                        ・なりすまし<br>
+                        ・R-18（性的な表現、暴力）, R-18G（猟奇、残虐、グロ）に該当するコンテンツ<br>
+                        ・住所、電話番号などの個人情報、およびプライバシーを侵害する投稿（投稿者本人の情報も含みます）<br>
+                        ・法令、公序良俗に反するおそれのある投稿<br>
+                        <br><br>
+                        2.他の参加者に対して、過度にメンション等を送る行為は控えてください。<br>
+                        リアクション等を送る行為は例外とします。<br>
+                        <br><br>
+                        3.スパムに該当する大量の投稿を行うなどの荒らし行為は、<br>
+                        有無にかかわらずBANの対応を取る場合があります。<br>
+                        <br><br>
+                        サーバーの参加方法<br>
+                        1.メール認証を行う。<br>
+                        2.#welcomeに行き、Role Overseerの問いに答える<br>
+                        3.配信を行っている場合、または配信者の通知を受け取りたい場合は<br>
+                        #streamersにいるRole Overseerの問いにも答える。<br>
+                        (後日、答えるのも可能。)<br>
+                        4.ようこそ！Adofai JP Unofficial Discordサーバーへ！<br>
+                        <br><br>
+                        おすすめ機能<br>
+                        -t 言語 内容を打つことで決めた言語でBotが翻訳を行ってくれるぞ！<br>
+                        例：<br>
+                        コマンド：-t en こんにちは。<br>
+                        結果：hello.<br>
+                        言語設定：<br>
+                        韓国 → ko<br>
+                        英語 → en<br>
+                        日本 → ja <br>
+                        <br>
+                    </div>
+                    </div>
                 </main>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
+        <script src="../js/scripts.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="assets/demo/chart-area-demo.js"></script>
-        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="../assets/demo/chart-area-demo.js"></script>
+        <script src="../assets/demo/chart-bar-demo.js"></script>
        
     </body>
 </html>
