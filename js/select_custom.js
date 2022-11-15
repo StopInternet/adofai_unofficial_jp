@@ -15,35 +15,35 @@ var number_2 = Math.floor( Math.random() * (max_2 + 1 - min_2) ) + min_2 ;
 */
 //easy
 var songs = {
-    1:"PIKASONIC - Friendship!",
-    2:"Leaf もぺもぺ",
-    3:"かめりあ Newspapers of Magicians",    
-    4:"Bossfight Commando steve",
-    5:"PIKASONIC Hyper",   
-    6:"かめりあ Crystallized",
-    7:"Xtrullor Cry (eazy)",
-    8:"linear ring enchanted love",
-    9:"3xp0 Transporter",
-    10:"ああああ 僕たちの旅とエピローグ",
-    11:"TheFatRat Unity",
-    12:"ああああ 劇場版『マージナルフロンティア』",
-    13:"Cosmograph ELIMINATOR",
-    14:"かめりあ Blackmagik Blazing",
-    15:"T+pazolite Dogbite",
-    16:"Adryx-G Tetris 2020",
-    17:"S3RL R4V3 Boy",
-    18:"cYsmix Fright March",
-    19:"TheFatRat Xenogenesis",
-    20:"Snaky wine Classy Kitty",
-    21:"かめりあ Together forever,my lovely lovely video game cartridges ",
-    22:"かめりあ First town of this journey",
-    23:"PIKASONIC Hanataba",
-    24:"Plum Terrasphere",
-    25:"Waterflame Clutterfunk",
-    26:"er ハイパーミラクルシューティングスター",
-    27:"BoomKitty Holy war",
-    28:"PIKASONIC Cosmos",
-    29:"Halv Overflow",
+    1:"PIKASONIC - Friendship! (HYONSU)",
+    2:"Leaf - もぺもぺ (ancotor)", // 譜面作者名要確認
+    3:"かめりあ - Newspapers for Magicians (Cadence)", // 譜面作者名要確認
+    4:"Bossfight - Commando Steve (Onslayet & LUMI)",
+    5:"PIKASONIC - Hyper (HYONSU)",   
+    6:"かめりあ - crystallized (Team Vega)",
+    7:"Xtrullor - Cry (easy) (Ihj, Original by -K)",
+    8:"linear ring - enchanted love (and the witch's selfish heart) (Team Vega)",
+    9:"3xp0 - Transporter (3xp0)",
+    10:"ああああ - 僕たちの旅とエピローグ。(Long ver.) (Team Vega)",
+    11:"TheFatRat - Unity (Onslayet)",
+    12:"ああああ - 劇場版『マージナルフロンティア』 (Team Vega)",
+    13:"Cosmograph - ELIMINATOR (XiZnYng)",
+    14:"かめりあ - Blackmagik Blazing (CARCINOGENS)", // 譜面作者名要確認
+    15:"t+pazolite - Dogbite (Kew - Zew)",
+    16:"Adryx-G - Tetris 2020 (Strode)",
+    17:"S3RL - R4V3 B0Y (chocomint)", // 無断掲載可能性？ Jerri = chocomint?
+    18:"cYsmix - Fright March (zedwards)", // 譜面作者名要確認
+    19:"TheFatRat - Xenogenesis (Parku)", 
+    20:"snakywine - Classy Kitty (pixelo3o)",
+    21:"かめりあ - Together forever, my lovely lovely video game cartridges (Blowfish)", // 譜面作者名要確認
+    22:"かめりあ - First Town of This Journey (Petey)", // 譜面作者名要確認
+    23:"PIKASONIC - Hanataba (ash9874)", // 譜面作者名要確認
+    24:"Plum - Terrasphere (에텔 Etell)", // 譜面作者名要確認
+    25:"Waterflame - Clutterfunk (Short) (Fix) (Editor AlriC)",
+    26:"er - ハイパーミラクルシューティングスター (PowerFactory)",
+    27:"BoomKitty - Holy War (miguel)", // 譜面作者名要確認
+    28:"PIKASONIC - Cosmos (7even)", // 譜面作者名要確認
+    29:"Halv - Overflow (Pharah & FluffyYoshi)",
 };
 
 var steam_link = "https://steamcommunity.com/sharedfiles/filedetails/?id="
