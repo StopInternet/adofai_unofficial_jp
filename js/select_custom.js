@@ -16,7 +16,7 @@ var number_2 = Math.floor( Math.random() * (max_2 + 1 - min_2) ) + min_2 ;
 //easy
 var songs = {
     1:"PIKASONIC - Friendship! (HYONSU)",
-    2:"Leaf - もぺもぺ (ancotor)", // 譜面作者名要確認
+    2:"LeaF - もぺもぺ (ancotor)", // 譜面作者名要確認
     3:"かめりあ - Newspapers for Magicians (Cadence)", // 譜面作者名要確認
     4:"Bossfight - Commando Steve (Onslayet & LUMI)",
     5:"PIKASONIC - Hyper (HYONSU)",   
