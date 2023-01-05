@@ -20,6 +20,9 @@
  #list {
   margin: auto;
 }
+#ans {
+  display: flex;
+}
 .adofai_jp{
   margin: auto;
   display: flex;
