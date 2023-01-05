@@ -10,5 +10,5 @@ function calc(){
     if(1 <= speed && 1 <= boost){
         calc = ((level*100)*speed)*boost
     }
-    document.getElementById("ans").innerHTML = "<h5>獲得経験値(計算結果)："+calc+"</h5>"
+    document.getElementById("ans").innerHTML = "<h5>獲得経験値(計算結果)："+Math.round(calc)+"</h5>"
 }
