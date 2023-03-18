@@ -9,7 +9,7 @@
         
         <title>Adofai Unofficial Jp Web Site</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
-        <link href="../css/styles.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 
         <meta name="title" content="Adofai_JP Unofficial">
@@ -26,12 +26,12 @@
         <meta property="twitter:url" content="https://stopinternet.github.io/achievement_adofai">
         <meta property="twitter:title" content="Adofai_JP Unofficial">
         <meta property="twitter:description" content="Adofai_JP Discordサーバーで運用している、ウェブサイト">
-        <link rel="shortcut icon" href="../icon.ico"> 
+        <link rel="shortcut icon" href="icon.ico"> 
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="../index.html">Adofai JP非公式サイト</a>
+            <a class="navbar-brand ps-3" href="index.html">Adofai JP非公式サイト</a>
             <!-- サイドバー-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -42,7 +42,7 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Core</div>
-                            <a class="nav-link" href="../index.html">
+                            <a class="nav-link" href="index.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 メインページ
                             </a>
@@ -54,11 +54,11 @@
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="../exp.html">経験値シミュレーター</a>
-                                    <a class="nav-link" href="../mod_add.html">modの導入方法</a>
-                                    <a class="nav-link" href="../custom_play.html">おすすめのカスタム譜面</a>
-                                    <a class="nav-link" href="../custom_select.html">ランダム譜面チャレンジ</a>
-                                    <a class="nav-link" href="../rules/rule.html">ルール</a>
+                                    <a class="nav-link" href="exp.html">経験値シミュレーター</a>
+                                    <a class="nav-link" href="mod_add.html">modの導入方法</a>
+                                    <a class="nav-link" href="custom_play.html">おすすめのカスタム譜面</a>
+                                    <a class="nav-link" href="custom_select.html">ランダム譜面チャレンジ</a>
+                                    <a class="nav-link" href="rules/rule.html">ルール</a>
                                 </nav>
                             </div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
@@ -69,12 +69,12 @@
                             <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
                                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
-                                        レベルアップ報酬
+                                        称号
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
                                     <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                                         <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="../etc.html">詳細</a>
+                                            <a class="nav-link" href="etc.html">詳細</a>
                                         </nav>
                                     </div>
                                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
@@ -107,23 +107,76 @@
             </div>
             <div id="layoutSidenav_content">
                 <main>
-                    <!--ページ文章書くとこ-->
                     <div class="adofai_jp">
-                        <br><br>
-                        <h1 class="mt-4"> Adofai JP Unofficial</h1><br>
-                        <a href="rule_en.html"><h1>English<h1></a><br>
-                        <a href="rule_korea.html"><h1>Korea</h1></a><br>
-                        <a href="rule_ja.html"><h1>Japan</h1></a>
+                    <h1 class="mt-4"> Adofai JP Unofficial</h1>
+                    <!--ページ文章書くとこ-->
+                    <img src="assets/img/logo2.png" width="800px" height="400px"><br>
+                    <div>
+                        <h3>「覇者の塔経験値シミュレーター」</h3><br>
+                        <p><h3>--獲得経験値--</h3>
+                            クリアしたレベルとスピードトライアル、<br>
+                            そしてイベント時によって、獲得経験値は変動します。<br>
+                            
+                            <h4>計算式</h4>
+                           （（ レベル（1-21） x 100 ）x スピード（1.0~））x イベントブースト（1％～100％）<br><br>
+
+                        <div id="ans">
+                            <h5>獲得経験値(計算結果)：100</h5>
+                        </div>
+                        レベル（1 ~ 21）<br>
+                        <input type="number" min="1" max="21" value="1" id="level_exp"><br><br>
+                        スピード（1.00 ~）<br>
+                        <input type="number" min="0" value="1" step="0.1" id="speed_exp"><br><br>
+                        イベントブースト（1％ ~ 100％）<br>
+                        <input type="number" min="0" max="100" value="0" id="event_boost"><br>
+                        <button id='btns' onclick='calc()'>計算</button>
+                        <br>
+                        <a class="nav-link" href="database.html">現在のレベルを確認</a>
+                        <br>
+                        <br>
+
+                        <h3>「Adofai道場経験値シミュレーター」</h3>
+                        <p>
+                            <h3>--獲得経験値--</h3>
+                            各レベル（✪-1~✪-6）を全てクリアすることで<br>
+                            ✪1 : 10,000<br>
+                            ✪2 : 20,000<br>
+                            ✪3 : 30,000<br>
+                            ✪4 : 40,000<br>
+                            ✪5 : 50,000<br>
+                            を獲得することが出来ます。<br>
+                            またスピードトライアルクリアですることで、さらに多くの経験値を獲得できるぞ！<br><br>
+                            <h4>計算式（</h4>
+                            各レベル  x  (各スピード数/10) = 獲得経験値<br>
+                            レベル（✪１～５） X ｛ 1 + (✪-1 x ✪-2 x ✪-3 x ✪-4 x ✪-5 x ✪-6) ÷ 100｝= 獲得経験値<br>
+                            <div id="ans2">
+                            </div>
+                            レべル(✪１～✪５)
+                            <input type="number" min="1" max="5" value="1" id="level_exp_dojo"><br>
+                            ✪-1
+                            <input type="number" min="0" value="1" step="0.1" id="speed_exp1"><br>
+                            ✪-2
+                            <input type="number" min="0" value="1" step="0.1" id="speed_exp2"><br>
+                            ✪-3
+                            <input type="number" min="0" value="1" step="0.1" id="speed_exp3"><br>
+                            ✪-4
+                            <input type="number" min="0" value="1" step="0.1" id="speed_exp4"><br>
+                            ✪-5
+                            <input type="number" min="0" value="1" step="0.1" id="speed_exp5"><br>
+                            ✪-6
+                            <input type="number" min="0" value="1" step="0.1" id="speed_exp6"><br>
+                            <button id='btns' onclick='calc_dojo()'>計算</button>
+                        </p>
                     </div>
-                    </div>
+                </div>
                 </main>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="../js/scripts.js"></script>
+        <script src="js/scripts.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="../assets/demo/chart-area-demo.js"></script>
-        <script src="../assets/demo/chart-bar-demo.js"></script>
-       
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="js/checked_exp.js"></script>
     </body>
 </html>
